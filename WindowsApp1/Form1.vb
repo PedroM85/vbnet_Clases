@@ -50,7 +50,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        'Clientes_get
         For Each item As Clientes In Cliente
             MsgBox("Codigo: " + item.Codigo.ToString + ", Apellido: " + item.Apellido + ", Nombre: " + item.Nombre + ", Domicilio: " + item.Domicilio)
         Next
