@@ -1,17 +1,18 @@
 ﻿Public Class Operaciones
     'Propiedades
     Private _Codigo As Integer
-    Private _Cliente As List(Of Clientes)
-    Private _Vehiculo As List(Of Vehiculos)
+    Private _Cliente As Object
+    Private _Vehiculo As Object
     Private _Fecha_alta As Date
 
 
-    Sub Operaciones(Codigo As Integer, Cliente As List(Of Clientes), Vehiculo As List(Of Vehiculos), Fecha_Alta As Date)
+    Sub Operaciones(Codigo As Integer, Cliente As Object, Vehiculo As Object, Fecha_Alta As Date)
         _Codigo = Codigo
         _Cliente = Cliente
         _Vehiculo = Vehiculo
         _Fecha_alta = Fecha_Alta
     End Sub
+
 
     Public Property Codigo() As Integer
         Get
@@ -22,20 +23,20 @@
         End Set
     End Property
 
-    Public Property Cliente() As List(Of Clientes)
+    Public Property Cliente() As Object
         Get
             Return _Cliente
         End Get
-        Set(value As List(Of Clientes))
+        Set(value As Object)
             Me._Cliente = value
         End Set
     End Property
 
-    Public Property Vehiculo() As List(Of Vehiculos)
+    Public Property Vehiculo() As Object
         Get
             Return _Vehiculo
         End Get
-        Set(value As List(Of Vehiculos))
+        Set(value As Object)
             Me._Vehiculo = value
         End Set
     End Property

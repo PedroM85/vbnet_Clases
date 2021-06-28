@@ -1,0 +1,19 @@
+﻿-Recuperar todos los clientes
+
+Select * from clientes;
+	
+
+-Recuperar todas las operaciones (incluyendo datos de vehiculo y cliente)
+(“Coloco *, pero aca van los campos necesarios en la consulta”)
+
+Select * from operaciones
+Inner join clientes on operaciones.cliente = clientes.codigo
+Inner join vehiculos on operaciones.vehiculo = vehiculo.codigo
+
+-	Alta de una operación.
+Previo a la insercion deberia estar cargado el cliente y el vehiculo, tambien se puede hacer desde un registro nuevo
+y luego se le pasa los codigo de referencia de cliente y vehiculo en este insert, con un inner join como en la 2 cosulta
+se puede traer todos los datos necesarios.
+
+Insert into operaciones (codigo,cliente,vehiculo,alta) values (1,”cliente”,”vehiculos”,now())
+

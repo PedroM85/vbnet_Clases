@@ -22,28 +22,28 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Cliente_get = New System.Windows.Forms.Button()
+        Me.Alta = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'Cliente_get
         '
-        Me.Button1.Location = New System.Drawing.Point(461, 52)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(163, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Cliente_get"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Cliente_get.Location = New System.Drawing.Point(461, 52)
+        Me.Cliente_get.Name = "Cliente_get"
+        Me.Cliente_get.Size = New System.Drawing.Size(163, 23)
+        Me.Cliente_get.TabIndex = 0
+        Me.Cliente_get.Text = "Cliente_get"
+        Me.Cliente_get.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Alta
         '
-        Me.Button2.Location = New System.Drawing.Point(461, 110)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(163, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Alta operaciones"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Alta.Location = New System.Drawing.Point(461, 110)
+        Me.Alta.Name = "Alta"
+        Me.Alta.Size = New System.Drawing.Size(163, 23)
+        Me.Alta.TabIndex = 1
+        Me.Alta.Text = "Alta operaciones"
+        Me.Alta.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -60,15 +60,15 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Alta)
+        Me.Controls.Add(Me.Cliente_get)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Cliente_get As Button
+    Friend WithEvents Alta As Button
     Friend WithEvents Button3 As Button
 End Class
